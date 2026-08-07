@@ -9,8 +9,15 @@
 
 // Add your code right below, good luck!
 
+// My solution.
+const firstName = 'Ameer';
+const lastName = 'Hamza';
+const birthYear = 2000;
+const thisYear = 2026;
 
+const greeting = 'Hello, I am ' + firstName + ' ' + lastName + ' and I am ' + (thisYear - birthYear) + ' years old.';
 
+console.log(greeting);
 
 
 // Do not change this
