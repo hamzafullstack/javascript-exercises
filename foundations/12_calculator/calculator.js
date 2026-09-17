@@ -8,20 +8,18 @@ const subtract = function(a, b) {
 };
 console.log(subtract(2, 1));
 
-const sum = function(...array) {
-	return [...array].reduce((total, item) => {
-    return total + item;
-  }, 0);
+const sum = function(array) {
+	return array.reduce((total, item) =>  total + item, 0);
 };
-console.log(sum(1,3,4,5));
+console.log(sum([1,3,4,5]));
 
-const multiply = function(...array) {
-  return [...array].reduce((accumulator, val) => {
+const multiply = function(array) {
+  return array.reduce((accumulator, val) => {
     return accumulator * val;
-  }, 1);
+  });
 };
 
-console.log(multiply(2,3,4,5));
+console.log(multiply([2,3,4,5]));
 
 const power = function(a, b) {
   return a ** b;
